@@ -1,0 +1,9 @@
+name: RandomGroup
+version: 0.1
+main: com.imyvm.RandomGroup
+api-version: 1.13
+
+commands:
+  rgroup:
+    description: All commands
+    aliases: [randomgroup]
