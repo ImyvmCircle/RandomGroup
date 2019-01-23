@@ -1,4 +1,4 @@
-package com.imyvm;
+package com.imyvm.RandomGroup;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -29,7 +29,8 @@ public class RandomGroup extends JavaPlugin {
         saveConfig();
 
         names = config.getStringList("Groups");
+        Commands commands = new Commands(this);
 
-        getCommand("rgroup").setExecutor(new Commands(this));
+        getCommand("rgroup").setExecutor(commands);
     }
 }

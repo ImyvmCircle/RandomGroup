@@ -1,6 +1,5 @@
-package com.imyvm;
+package com.imyvm.RandomGroup;
 
-import com.google.common.collect.Lists;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -24,10 +23,11 @@ public class Commands implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmdObj, String label, String[] args) {
-        String cmd = args[0];
         if (args.length<=1){
+            sender.sendMessage("/rgroup start [amount/Integer]");
             return false;
         }
+        String cmd = args[0];
         if (cmd.equalsIgnoreCase("start")){
             if (!sender.hasPermission("RandomGroup.start")){
                 return false;

@@ -1,6 +1,6 @@
 name: RandomGroup
 version: 0.1
-main: com.imyvm.RandomGroup
+main: com.imyvm.RandomGroup.RandomGroup
 api-version: 1.13
 
 commands:
